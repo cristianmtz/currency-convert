@@ -1,2 +1,26 @@
 # Conversor de monedas
-Conversor de monedas, utilizando Java
+Practicando con Java: Challenge Conversor de Monedas :dollar: -> :euro:
+
+Esta aplicación Java permite a los usuarios realizar conversiones de divisas utilizando una API externa.
+Los usuarios pueden especificar la cantidad de la divisa de origen, la divisa de destino y obtener el monto convertido.
+
+### Tecnologias:
+    - Java SE 17
+
+### API REST utilizada:
+    - ExchangeRate-API
+
+### Caracteristicas
+    - Permite al usuario digitar la divisa de origen, divisa de destino y el monto a convertir
+    - Utilizando la parabra 'help' se desplegara un menu con todas las divisas disponibles
+    - Soporta una amplia variedad de divisas (161).
+
+
+
+
+### Autor
+Esta aplicacion fue desarrollada por [Cristian Martinez](https://github.com/cristianmtz)
+
+
+
+
