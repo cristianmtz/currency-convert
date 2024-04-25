@@ -14,6 +14,6 @@ public record ExchangeRate(String base_code, Map<String, Double> conversion_rate
 
         }
 
-        return "Currency conversion could not be performed";
+        return "currency not available, please check currency";
     }
 }

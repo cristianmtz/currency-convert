@@ -42,6 +42,7 @@ public class Main {
                 UYU             Uruguayan Peso  Uruguay
                 VES             Venezuelan Bol  Venezuela
                 YER             Yemeni Rial     Yemen
+                .....
                 ------------------------------------------------------
                 """;
 
@@ -53,6 +54,7 @@ public class Main {
             String input = keyboard.nextLine();
 
             if (input.equalsIgnoreCase("Exit")){
+                System.out.println("Thank you for using our application");
                 break;
             }
 
@@ -68,10 +70,15 @@ public class Main {
             // Split the input to obtain base currency, currencies and amount
             String[] words = upperCaseInput.split(" ");
 
-            ExchangeRate exchangeRate = request.getExchangeRate(words[0]);
+            try{
+                ExchangeRate exchangeRate = request.getExchangeRate(words[0]);
+                String result = exchangeRate.converter(words[1], Double.parseDouble(words[2]));
+                System.out.println(result);
+            }catch (NullPointerException e){
+                //In case the user enters an unavailable base currency
+                System.out.println("currency not available, please check base currency");
+            }
 
-            String result = exchangeRate.converter(words[1], Double.parseDouble(words[2]));
-            System.out.println(result);
         }
 
     }

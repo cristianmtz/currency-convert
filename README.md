@@ -10,11 +10,12 @@ Los usuarios pueden especificar la cantidad de la divisa de origen, la divisa de
 ### API REST utilizada:
     - ExchangeRate-API
 
-### Caracteristicas
+### Caracteristicas:
     - Permite al usuario digitar la divisa de origen, divisa de destino y el monto a convertir
     - Utilizando la parabra 'help' se desplegara un menu con todas las divisas disponibles
     - Soporta una amplia variedad de divisas (161).
 
+### Demo:
 
 
 
